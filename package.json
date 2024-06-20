@@ -7,7 +7,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:ui": "rm -rf dist && cd ../part2.6 && npm run build && cp -r dist ../phone-backend",
+    "build:ui": "rm -rf dist && cd ../part2.6 && npm run build && copy -r dist ../phone-backend",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "author": "varun",
@@ -18,6 +18,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
+    "mongoose": "^8.4.3",
     "morgan": "^1.10.0"
   }
 }
